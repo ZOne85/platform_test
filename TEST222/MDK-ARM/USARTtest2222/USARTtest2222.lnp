@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"usarttest2222\startup_stm32f103xb.o"
+"usarttest2222\main.o"
+"usarttest2222\gpio.o"
+"usarttest2222\usart.o"
+"usarttest2222\stm32f1xx_it.o"
+"usarttest2222\stm32f1xx_hal_msp.o"
+"usarttest2222\stm32f1xx_hal_gpio_ex.o"
+"usarttest2222\stm32f1xx_hal_tim.o"
+"usarttest2222\stm32f1xx_hal_tim_ex.o"
+"usarttest2222\stm32f1xx_hal_uart.o"
+"usarttest2222\stm32f1xx_hal.o"
+"usarttest2222\stm32f1xx_hal_rcc.o"
+"usarttest2222\stm32f1xx_hal_rcc_ex.o"
+"usarttest2222\stm32f1xx_hal_gpio.o"
+"usarttest2222\stm32f1xx_hal_dma.o"
+"usarttest2222\stm32f1xx_hal_cortex.o"
+"usarttest2222\stm32f1xx_hal_pwr.o"
+"usarttest2222\stm32f1xx_hal_flash.o"
+"usarttest2222\stm32f1xx_hal_flash_ex.o"
+"usarttest2222\stm32f1xx_hal_exti.o"
+"usarttest2222\system_stm32f1xx.o"
+--strict --scatter "USARTtest2222\USARTtest2222.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USARTtest2222.map" -o USARTtest2222\USARTtest2222.axf
